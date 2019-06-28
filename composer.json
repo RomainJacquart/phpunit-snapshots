@@ -1,5 +1,5 @@
 {
-    "name": "madewithlove/phpunit-snapshots",
+    "name": "RomainJacquart/phpunit-snapshots",
     "description": "Snaphot testing for PHPUnit",
     "license": "MIT",
     "keywords": ["phpunit", "snapshot"],
