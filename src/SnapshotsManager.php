@@ -22,7 +22,7 @@ class SnapshotsManager
      */
     public static function setSuite($suite)
     {
-        if (get_class(static::$suite) !== get_class($suite)) {
+        if (static::$suite !== null && get_class(static::$suite) !== get_class($suite)) {
             static::$assertionsInTest = [];
         }
 
