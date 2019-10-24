@@ -13,9 +13,9 @@ trait SnapshotAssertions
      *
      * @param mixed       $expected
      * @param string|null $identifier An additional identifier to append to the snapshot ID
-     * @param string|null $message    A message to throw in case of error
+     * @param string $message    A message to throw in case of error
      */
-    protected function assertEqualsSnapshot($expected, $identifier = null, $message = null)
+    protected function assertEqualsSnapshot($expected, $identifier = null, $message = '')
     {
         SnapshotsManager::setSuite($this);
         $snapshot = SnapshotsManager::upsertSnapshotContents($identifier, $expected);
